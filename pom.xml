@@ -8,6 +8,7 @@
         <module>wang-dao</module>
         <module>wang-service</module>
         <module>wang-web</module>
+        <module>wang-test</module>
     </modules>
     <groupId>com.base.wang</groupId>
     <artifactId>wang</artifactId>

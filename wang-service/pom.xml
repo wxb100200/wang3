@@ -11,6 +11,9 @@
     <artifactId>wang-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>com.base.wang</groupId>
@@ -35,5 +38,18 @@
             <version>2.1.5.RELEASE</version>
         </dependency>
     </dependencies>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.2</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <!--<encoding>${project.build.sourceEncoding}</encoding>-->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

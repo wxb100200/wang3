@@ -11,14 +11,13 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
-import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import tk.mybatis.spring.annotation.MapperScan;
 @SpringBootApplication
 @ServletComponentScan
 @EnableScheduling
 @MapperScan("com.base.wang.mapper")
-public class StartApplication {
+public class WebStartApplication {
 
 
     private static String YML_PATH = "application.yml";
@@ -54,6 +53,6 @@ public class StartApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(StartApplication.class, args);
+        SpringApplication.run(WebStartApplication.class, args);
     }
 }
