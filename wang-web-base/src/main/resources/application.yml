@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8081
 spring:
   datasource:
     # 配置数据源类型
@@ -33,15 +33,3 @@ redis:
 token:
   expire:
     seconds: 7200
-logging:
-  config: classpath:logback-wang-web.xml
-log:
-  level:
-    root: info
-    my: info
-  file: logs/wang-web.log
-  maxsize: 30MB
-#开启Mybatis下划线命名转驼峰命名
-mybatis:
-  configuration:
-    map-underscore-to-camel-case: true
